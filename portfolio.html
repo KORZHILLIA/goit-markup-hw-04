@@ -25,12 +25,12 @@
         <nav>
           <ul class="page-header-nav no-style-list flexy">
             <li class="page-header-nav-item">
-              <a class="page-header-nav-link" href="./index.html" target="_self">Студия</a>
+              <a class="page-header-nav-link" href="./index.html" target="_self"
+                >Студия</a
+              >
             </li>
             <li class="page-header-nav-item">
-              <a class="page-header-nav-link is-active" href="./portfolio.html" target="_self"
-                >Портфолио</a
-              >
+              <a class="page-header-nav-link is-active" href="./portfolio.html" target="_self">Портфолио</a>
             </li>
             <li class="page-header-nav-item">
               <a class="page-header-nav-link" href="#">Контакты</a>
@@ -39,12 +39,20 @@
         </nav>
         <ul class="page-header-contacts no-style-list flexy">
           <li class="page-header-contacts-item">
-            <a class="page-header-contacts-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="page-header-contacts-mail flexy" href="mailto:info@devstudio.com">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/svg/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="page-header-contacts-item">
-            <a class="page-header-contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="page-header-contacts-tel flexy" href="tel:+380961111111">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/svg/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -71,7 +79,8 @@
           </ul>
           <ul class="portfolio-cards no-style-list flexy">
             <li class="product-item">
-              <img
+              <a class="product-item-link" href="#">
+                <img
                 class="product-pic"
                 src="images/portfolio-img/laptop.jpg"
                 alt="Laptop with people on the screen"
@@ -82,9 +91,11 @@
                 <h2 class="product-header">Технокряк</h2>
                 <p class="product-subheader">Веб-сайт</p>
               </div>
+              </a>
             </li>
             <li class="product-item">
-              <img
+              <a class="product-item-link" href="#">
+                <img
                 class="product-pic"
                 src="images/portfolio-img/basketball.jpg"
                 alt="Two basketball players"
@@ -95,9 +106,11 @@
                 <h2 class="product-header">Постер New Orlean vs Golden Star</h2>
                 <p class="product-subheader">Дизайн</p>
               </div>
+              </a>
             </li>
             <li class="product-item">
-              <img
+              <a class="product-item-link" href="#">
+                <img
                 class="product-pic"
                 src="images/portfolio-img/seafood.jpg"
                 alt="Fish with slogan"
@@ -108,9 +121,11 @@
                 <h2 class="product-header">Ресторан Seafood</h2>
                 <p class="product-subheader">Приложение</p>
               </div>
+              </a>
             </li>
             <li class="product-item">
-              <img
+              <a class="product-item-link" href="#">
+                <img
                 class="product-pic"
                 src="images/portfolio-img/prime.jpg"
                 alt="Black earphones"
@@ -121,9 +136,11 @@
                 <h2 class="product-header">Проект Prime</h2>
                 <p class="product-subheader">Маркетинг</p>
               </div>
+              </a>
             </li>
             <li class="product-item">
-              <img
+              <a class="product-item-link" href="#">
+                <img
                 class="product-pic"
                 src="images/portfolio-img/boxes.jpg"
                 alt="Two boxes"
@@ -134,9 +151,11 @@
                 <h2 class="product-header">Проект Boxes</h2>
                 <p class="product-subheader">Приложение</p>
               </div>
+              </a>
             </li>
             <li class="product-item">
-              <img
+              <a class="product-item-link" href="#">
+                <img
                 class="product-pic"
                 src="images/portfolio-img/monitor.jpg"
                 alt="PC monitor"
@@ -147,9 +166,11 @@
                 <h2 class="product-header">Inspiration has no Borders</h2>
                 <p class="product-subheader">Веб-сайт</p>
               </div>
+              </a>
             </li>
             <li class="product-item">
-              <img
+              <a class="product-item-link" href="#">
+                <img
                 class="product-pic"
                 src="images/portfolio-img/book.jpg"
                 alt="Opened book"
@@ -160,9 +181,11 @@
                 <h2 class="product-header">Издание Limited Edition</h2>
                 <p class="product-subheader">Дизайн</p>
               </div>
+              </a>
             </li>
             <li class="product-item">
-              <img
+              <a class="product-item-link" href="#">
+                <img
                 class="product-pic"
                 src="images/portfolio-img/label.jpg"
                 alt="White label"
@@ -173,9 +196,11 @@
                 <h2 class="product-header">Проект LAB</h2>
                 <p class="product-subheader">Маркетинг</p>
               </div>
+              </a>
             </li>
             <li class="product-item">
-              <img
+              <a class="product-item-link" href="#">
+                <img
                 class="product-pic"
                 src="images/portfolio-img/business.jpg"
                 alt="Hands on laptop"
@@ -186,6 +211,7 @@
                 <h2 class="product-header">Growing Business</h2>
                 <p class="product-subheader">Приложение</p>
               </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -193,13 +219,17 @@
     </main>
     <footer class="basement">
       <div class="container">
-        <a href="./index.html" class="logo-main">
+        <div class="basement-wrapper flexy">
+          <div class="basement-logo-and-address">
+            <a href="./index.html" class="logo-main">
           <span class="logo-accent">Web</span><span class="basement-logo">Studio</span>
         </a>
         <address class="basement-address">
           <ul class="basement-address-list no-style-list">
             <li class="basement-address-list-item">
-              <a class="basement-phys-address" href="#" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+              <a class="basement-phys-address" href="#" rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
             </li>
             <li class="basement-address-list-item">
               <a class="basement-mail" href="mailto:info@example.com">info@example.com</a>
@@ -209,6 +239,42 @@
             </li>
           </ul>
         </address>
+          </div>
+          <div class="basement-social">
+            <h2 hidden></h2>
+            <h3 class="basement-social-header">присоединяйтесь</h3>
+            <ul class="basement-social-list no-style-list flexy">
+                <li class="social-item">
+                  <a class="social-link basement-social-link" href="https://www.instagram.com" rel="noopener noreferrer">
+                    <svg class="icon-social icon-social-basement" width="20" height="20">
+                      <use href="./images/svg/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link basement-social-link" href="https://www.twitter.com" rel="noopener noreferrer">
+                    <svg class="icon-social icon-social-basement" width="20" height="20">
+                      <use href="./images/svg/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link basement-social-link" href="https://www.facebook.com" rel="noopener noreferrer">
+                    <svg class="icon-social icon-social-basement" width="20" height="20">
+                      <use href="./images/svg/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link basement-social-link" href="https://www.facebook.com" rel="noopener noreferrer">
+                    <svg class="icon-social icon-social-basement" width="20" height="20">
+                      <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
