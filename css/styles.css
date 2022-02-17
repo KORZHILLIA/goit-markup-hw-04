@@ -351,15 +351,11 @@ border-radius: 0px 0px 4px 4px;
 
 .basement-wrapper {
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .basement-logo-and-address {
   margin-right: 70px;
-}
-
-.basement-social {
-  padding-top: 12px;
 }
 
 .basement-social-header {
