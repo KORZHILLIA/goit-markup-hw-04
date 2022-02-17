@@ -263,10 +263,8 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .social-link {
-  display: inline-block;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
   background-color: transparent;
 }
@@ -303,6 +301,10 @@ border-radius: 0px 0px 4px 4px;
 
 .client-icon {
   fill: var(--team-social-icon-color);
+}
+
+.client-pic:hover {
+  border-color: var(--additional-and-hover-color);
 }
 
 .client-pic:hover .client-icon {
@@ -403,7 +405,9 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:focus,
+.product-item-link:hover,
+.product-item-link:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -424,13 +428,6 @@ border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;  
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid var(--portfolio-card-border-color);
-}
-
-.product-item-link:hover,
-.product-item-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .product-item:nth-child(3n) {
